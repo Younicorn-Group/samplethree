@@ -1,0 +1,273 @@
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    line-height: 1.5;
+}
+a, a:hover{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.full-width{
+    width: 100%;
+}
+.fa{
+    margin-right: 10px;
+}
+/* Reset CSS */
+/* header */
+header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar-mobile{
+    display: none;
+}
+.mobile{
+    display: flex;
+    align-items: center;
+}
+.mobile2{
+    display: flex;
+}
+.hamburger .fa{
+    color: white;
+}
+.hamburger:hover{
+    cursor: pointer;
+}
+.angle-right .fa{
+    margin-left: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: white;
+}
+.angle-right:hover{
+    cursor: pointer;
+    color: orangered;
+}
+.container2{
+    background-color: orangered;
+}
+a.navbar-brand{
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.navbar{
+    padding: 20px 0px;
+}
+nav a,nav a:hover{
+    color: white;
+    font-weight: bold;
+}
+li.nav-item a.nav-link{
+    position: relative;
+    display: inline-block;
+}
+li.nav-item a.nav-link:hover{
+    color: yellow;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0;
+}
+li.nav-item{
+    margin: 0px 15px;
+}
+li.nav-item:last-child{
+    margin-right: 0;
+}
+span.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+button:focus{
+    outline: none;
+    z-index: 100;
+}
+.show {
+    display:block;
+}
+/* header */
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/blog/pexels-tatiana-fet-1105766.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.main::before{
+    position: absolute;
+    content: '';
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.main-content{
+    z-index: 1;
+}
+.main-content .welcome{
+    font-weight: bold;
+    font-size: 22px;
+}
+.img-fluid{
+    margin-top: 100px;
+    width: 200px;
+}
+.main-content .type{
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    margin-top: 20px;
+}
+.main-content .social-icons{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.main-content .social-icons a{
+    padding: 0px 10px;
+    color: white;
+}
+.main-content .social-icons a:hover{
+    padding: 0px 10px;
+    color: cyan;
+    transition: all 0s ease;
+    -webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -o-transition: all 0s ease;
+}
+
+/* About */
+.about{
+    margin: 120px 240px;
+}
+
+.image-about{
+    width: 300px;
+    display: block;
+    margin: 0px auto;
+}
+.about-tagline h3{
+    text-align: center;
+    margin: 20px 0px;
+}
+.about-tagline{
+    text-align: center;
+}
+/* About */
+
+/* Services */
+.services{
+    padding: 120px 240px;
+    background-image: url(img/portfolio/pexels-karolina-grabowska-4195410.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.service-single{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+.service-icon .fa{
+    margin: 20px;
+    font-size: 36px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+}
+.service-name{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.service-description{
+    margin-bottom: 35px;
+}
+.service-button{
+    margin-bottom: 20px;
+}
+/* Services */
+
+/* Portfolio */
+.portfolio{
+    margin: 120px 240px;
+}
+/* .portfolio-single img{
+    height: 250px;
+    width: 300px;
+    margin-bottom: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+} */
+.row{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+.column{
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+}
+.column img{
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+/* Portfolio */
+
+/* Contact */
+.contact{
+    background-color: rgb(1, 1, 44);
+    padding: 120px 240px;
+}
+.contact-top{
+    color: white;
+}
+.contact-top .row{
+    margin-bottom: 50px;
+}
+.map{
+    border: 5px solid white
+}
+/* Contact */
+
+/* Footer */
+footer{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    color: #fff;
+    background-color: black;
+}
+/* Footer */

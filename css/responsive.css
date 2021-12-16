@@ -1,0 +1,58 @@
+@media screen and (max-width: 1024px){
+    .nav-item{
+        padding: 0px 15px;
+    }
+    .navbar-nav li.nav-item{
+        margin: 5px 0px;
+    }
+    .navbar{
+        display: none;
+    }
+    .mobile{
+        padding-left: 25px;
+    }
+    .navbar-mobile{
+        padding: 5px 0px;
+        display: flex;
+    }
+    .about{
+        margin: auto;
+        padding: 60px 0px;
+        display: inline-block;
+    }
+    .services{
+        margin: auto;
+        padding: 60px 0px;
+        display: inline-block;
+    }
+    .service-single{
+        margin-bottom: 10px;
+    }
+    .portfolio{
+        margin: auto;
+        padding: 60px 0px;
+        display: inline-block;
+    }
+    .column img{
+        width: 200px;
+    }
+    .contact{
+        margin: auto;
+        padding: 60px 0px;
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
